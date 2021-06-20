@@ -46,6 +46,11 @@ func TestDeadline(t *testing.T) {
 			t.Error(err)
 			return
 		}
+
+		_, err = conn.Read(buf)
+		if err != nil {
+			t.Error(err)
+		}
 	}()
 
 	conn, err := net.Dial("tcp", listener.Addr().String())
