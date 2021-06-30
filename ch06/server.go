@@ -14,7 +14,7 @@ type Server struct {
 	Timeout time.Duration // the duration to wait for an acknowledgment
 }
 
-func (s Server) ListenAndServer(addr string) error {
+func (s Server) ListenAndServe(addr string) error {
 	conn, err := net.ListenPacket("udp", addr)
 	if err != nil {
 		return err
