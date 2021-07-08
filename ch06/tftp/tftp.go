@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"NetworkProgrammingWithGo/tftp"
+	"github.com/awoodbeck/gnp/ch06/tftp"
 )
 
 var (
